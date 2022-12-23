@@ -1,0 +1,31 @@
+<nav id="navbar" class="navbar-at-top navbar-dark {{ if .IsHome }}navbar-index{{else}}navbar-page{{end}}">
+    <div class="container-fluid align-self-center"><a aria-current="page" class="text-center text-uppercase" href="/">
+            <h1 class="navbar-brand mb-0">{{.Title}}</h1>
+        </a><button class="navbar-toggler" type="button" role="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto align-items-center">
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main }}
+                    {{ if .HasChildren }}
+                        <li class="nav-item text-center dropdown{{if $currentPage.HasMenuCurrent "main" . }} active{{end}} {{ .Identifier }}">
+                            <a class="nav-link dropdown-toggle" id="menu-dropdown-{{.Weight}}" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">{{ .Name }}</a>
+                            <div class="dropdown-menu" aria-labelledby="menu-dropdown-{{.Weight}}">
+                                {{ range .Children }}
+                                    {{ if eq .Pre "divider" }}
+                                    <div class="dropdown-divider"></div>
+                                    {{ end }}
+                                    <a class="dropdown-item" href="{{ .URL }}">{{ .Name }}</a>
+                                {{ end}}
+                            </div>
+                        </li>
+                    {{ else }}
+                        <li class="nav-item text-center{{if $currentPage.IsMenuCurrent "main" . }} active{{end}} {{ .Identifier }}"><a{{if $currentPage.IsMenuCurrent "main" . }} aria-current="page"{{end}} class="nav-link" href="{{ .URL }}">{{ .Name }}</a></li>
+                    {{ end }}
+                {{ end }}
+            </ul>
+        </div>
+        <div class="navbar-nav flex-row ml-md-auto d-none d-md-flex"></div>
+    </div>
+</nav>

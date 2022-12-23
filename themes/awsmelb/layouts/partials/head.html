@@ -1,0 +1,61 @@
+<head>
+    <meta charSet="utf-8" />
+    <meta httpEquiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="/img/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
+    <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
+    {{ $styles := resources.Get "scss/style.scss" | resources.ToCSS | minify }}
+    <link rel="stylesheet" href="{{ $styles.Permalink }}" />
+    {{ $styles := resources.Get "css/fontawesome.css" | minify }}
+    <link rel="stylesheet" href="{{ $styles.Permalink }}" />
+    <style type="text/css">
+        .anchor.before {
+            position: absolute;
+            top: 0;
+            left: 0;
+            transform: translateX(-100%);
+            padding-right: 4px;
+        }
+
+        .anchor.after {
+            display: inline-block;
+            padding-left: 4px;
+        }
+
+        h1 .anchor svg,
+        h2 .anchor svg,
+        h3 .anchor svg,
+        h4 .anchor svg,
+        h5 .anchor svg,
+        h6 .anchor svg {
+            visibility: hidden;
+        }
+
+        h1:hover .anchor svg,
+        h2:hover .anchor svg,
+        h3:hover .anchor svg,
+        h4:hover .anchor svg,
+        h5:hover .anchor svg,
+        h6:hover .anchor svg,
+        h1 .anchor:focus svg,
+        h2 .anchor:focus svg,
+        h3 .anchor:focus svg,
+        h4 .anchor:focus svg,
+        h5 .anchor:focus svg,
+        h6 .anchor:focus svg {
+            visibility: visible;
+        }
+    </style>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossOrigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossOrigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossOrigin="anonymous"></script>
+    <script src="https://unpkg.com/showdown/dist/showdown.min.js"></script>
+    {{ $scripts := resources.Get "js/main.js" | minify }}
+    <script src="{{ $scripts.Permalink }}"></script>
+</head>

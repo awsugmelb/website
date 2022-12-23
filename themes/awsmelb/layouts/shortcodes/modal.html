@@ -1,0 +1,6 @@
+<div class="custom-block callout {{ .Get 0 }}">
+    <div class="custom-block-heading">{{ .Get 1 }}</div>
+    <div class="custom-block-body">
+        {{ .Inner | markdownify }}
+    </div>
+</div>

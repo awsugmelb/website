@@ -1,0 +1,545 @@
+// Colors
+//
+// Grayscale and brand colors for use across Bootstrap.
+
+// Start with assigning color names to specific hex values.
+//
+// Color system
+//
+@import './colors.scss';
+
+$primary: $orange;
+$secondary: #12809a;
+
+// Reassign color vars to semantic color scheme
+$theme-colors: (
+  primary: $orange,
+  secondary: $secondary,
+  success: $green,
+  info: $cyan,
+  warning: $yellow,
+  danger: $red,
+  light: $gray-100,
+  dark: $gray-800,
+) !default;
+
+// Options
+//
+// Quickly modify global styling by enabling or disabling optional features.
+$enable-rounded: true !default;
+$enable-shadows: true !default;
+$enable-gradients: false !default;
+$enable-transitions: false !default;
+$enable-hover-media-query: false !default;
+$enable-grid-classes: true !default;
+$enable-print-styles: true !default;
+
+// Grid containers
+//
+// Define the maximum width of `.container` for different screen sizes.
+
+// $container-max-widths: (
+//   sm: 540px,
+//   md: 640px,
+//   lg: 710px,
+//   xl: 780px,
+// ) !default;
+
+// Body
+//
+// Settings for the `<body>` element.
+
+$body-bg: $black !default;
+$body-color: $gray-700 !default;
+$inverse-bg: $gray-900 !default;
+$inverse-color: $gray-600 !default;
+
+$header-height: 110px;
+
+// Links
+//
+// Style anchor elements.
+$link-decoration: none !default;
+$link-hover-decoration: none !default;
+
+// Fonts
+//
+@import './fonts.scss';
+
+@import './bootstrap/bootstrap.scss';
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+img {
+  margin-bottom: 15px;
+  max-width: 100%;
+}
+
+img:hover {
+  animation: pulse 0.5s;
+}
+
+.header-wrapper {
+  background-color: $primary;
+
+  @media print {
+    display: none !important;
+  }
+}
+
+.header-overlay {
+  padding-top: $header-height;
+}
+
+.header-overlay h1 {
+  @extend .text-white;
+}
+
+.index-header-wrapper {
+  background-color: black;
+  background-image: url(/img/background.jpg);
+  background-position: 50% 0%;
+  background-attachment: fixed;
+  will-change: transform;
+  transform: translate3d(0,0,0);
+  background-repeat: no-repeat;
+  // background-size: cover;
+}
+
+.index-header-wrapper .jumbotron {
+  padding-top: 80px;
+}
+
+// .navbar {
+//   position: absolute;
+//   height: 80px;
+// }
+
+.btn-round {
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 56px;
+  font-size: 14pt;
+}
+
+.btn-overlay-light {
+  border-width: 2px;
+}
+
+.logo-hero > img {
+  max-height: 400px;
+}
+
+.logo-hero {
+  @include media-breakpoint-down(sm) {
+    text-align: center;
+  }
+}
+
+.index-header-overlay {
+  background-color: rgba($color: #000000, $alpha: 0.6)
+}
+
+.btn-join {
+  @extend .btn;
+  @extend .btn-primary;
+  @extend .btn-lg;
+  @extend .text-white;
+  @extend .text-uppercase;
+  @extend .mr-3 !optional;
+  @extend .rounded-pill;
+  @extend .px-4;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.btn-outline {
+  @extend .btn;
+  @extend .btn-lg;
+  @extend .btn-outline-light;
+  @extend .text-uppercase;
+  @extend .rounded-pill;
+  @extend .px-4;
+  font-weight: 600;
+  font-size: 1rem;
+}
+
+.navbar .nav-item > a {
+  @extend .text-uppercase;
+  @extend .font-weight-bold !optional;
+}
+
+.navbar {
+  height: 80px;
+}
+
+.navbar-dark .nav-item .nav-link {
+  @extend .text-white;
+}
+
+.navbar-index .active .nav-link,
+.navbar-index .nav-item:hover .nav-link,
+.navbar .active .nav-link,
+.navbar .nav-item:hover .nav-link {
+  @extend .text-primary;
+}
+
+.navbar-page .active .nav-link,
+.navbar-page .nav-item:hover .nav-link {
+  @include media-breakpoint-up(md) {
+    color: $black !important;
+  }
+
+  @include media-breakpoint-down(sm) {
+    color: $primary !important;
+  }
+}
+
+.split-header svg {
+  // height: 154px;
+  width: calc(100% + 30px);
+  margin-left: -15px;
+}
+
+.svg-primary-bg {
+  fill: $orange !important;
+}
+
+.svg-accent {
+  stroke: $secondary;
+}
+
+.btn-nub {
+  @extend .btn;
+  @extend .btn-secondary;
+  @extend .rounded-circle;
+  @extend .mb-4;
+  width: 2.14em;
+  height: 2.14em;
+  font-size: 3.5rem !important;
+  box-shadow: 0 10px 30px 0 rgba(49,52,57,.3),0 10px 30px rgba(0,0,0,.08);
+  padding-top: 0.3em;
+  line-height: 1.5 !important;
+}
+
+.navbar-at-top, .navbar-scrolled {
+  @extend .navbar;
+  @extend .fixed-top;
+  @extend .navbar-expand-lg;
+  @extend .flex-column;
+  @extend .flex-md-row;
+  transition: all 200ms ease-in-out;
+
+  @include media-breakpoint-up(sm) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+.navbar-brand {
+  display: none;
+
+  @include media-breakpoint-up(sm) {
+    display: block;
+  }
+}
+
+.navbar-at-top > .container-fluid, .navbar-scrolled > .container-fluid {
+  padding-top: 10px;
+}
+
+.navbar-at-top {
+  @extend .navbar-dark;
+  @extend .bg-transparent;
+  border-bottom: 1px solid rgba($color: #ffffff, $alpha: 0.6);
+}
+
+.navbar-scrolled {
+  @extend .navbar-light;
+  @extend .bg-white;
+  border-bottom: 1px solid rgba($color: #000000, $alpha: 0.6);
+}
+
+.display-5 {
+  @extend .display-1;
+  font-size: 2.5rem;
+}
+
+.display-6 {
+  @extend .display-1;
+  font-size: 1.5rem;
+}
+
+.display-7 {
+  @extend .display-1;
+  font-size: 1.2rem;
+}
+
+.btn-primary, .btn-secondary {
+  @extend .text-white;
+}
+
+.grid-image {
+  padding-top: 25%;
+  background-size: cover;
+}
+
+.grid-image:hover {
+  animation: pulse 0.5s;
+}
+
+.about-image {
+  box-shadow: 0 10px 30px 0 rgba(189,189,189,.3),0 10px 30px rgba(0,0,0,.08);
+  flex: 0 0 auto;
+  display: flex;
+  flex-basis: auto;
+  flex-grow: 0;
+  flex-shrink: 0;
+  height: auto;
+  box-sizing: border-box;
+  width: 600px;
+  height: 400px;
+}
+
+.about-overlay {
+  position: relative;
+  z-index: 0;
+  display: flex;
+  box-sizing: border-box;
+}
+
+.about-overlay-box {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: $secondary;
+  box-shadow: 0 4px 10px 0 rgba(74,74,74,.3),0 4px 10px rgba(0,0,0,.08);
+  display: inline-block;
+  transform: translate(20%,-8%);
+  width: 83%;
+  height: 113%;
+  z-index: -1;
+}
+
+.card-title {
+  @extend .display-6;
+}
+
+.card-subtitle {
+  @extend .lead;
+  @extend .text-muted;
+  @extend .mb-2;
+}
+
+.card-text a {
+  @extend .mx-2;
+  @extend .mt-2;
+  font-size: 2rem;
+}
+
+.card-img-top {
+  margin-bottom: 0px;
+}
+
+.next-event-description thead, .attend-meetups thead {
+  display: none;
+}
+
+.next-event-description table, .attend-meetups table {
+  @extend .table;
+  @extend .table-striped;
+}
+
+.attend-meetups table, .next-event-description table, .minutes table {
+  @include media-breakpoint-up(md) {
+    max-width: 50%;
+  }
+}
+
+.minutes table tr {
+  transform: rotate(0);
+}
+
+.next-event-description h4 {
+  @extend .display-6;
+}
+
+.next-event h4 {
+  @extend .mt-3;
+}
+
+.navbar-dark .dropdown-menu {
+  background-color: rgba($color: #000000, $alpha: 0.9);
+  border: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+  -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+          box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+}
+
+@include media-breakpoint-down(xs) {
+  .navbar-light .navbar-collapse {
+    background-color: rgba($color: #ffffff, $alpha: 0.9);
+    border: 1px solid rgba($color: #000000, $alpha: 0.2);
+    -webkit-box-shadow: 0 6px 12px rgba(255, 255, 255, .175);
+            box-shadow: 0 6px 12px rgba(255, 255, 255, .175);
+  }
+
+  .navbar-dark .navbar-collapse {
+    background-color: rgba($color: #000000, $alpha: 0.9);
+    border: 1px solid rgba($color: #ffffff, $alpha: 0.2);
+    -webkit-box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, .175);
+  }
+}
+
+.navbar-dark .dropdown-menu .dropdown-divider {
+  border-top: 1px solid rgba($color: #ffffff, $alpha: 0.6);
+}
+.navbar-dark .dropdown-menu a {
+  color: $white;
+}
+.navbar-dark .dropdown-menu a:hover,
+.navbar-dark .dropdown-menu a:focus {
+  color: $primary;
+  text-decoration: none;
+  background-color: rgba($color: #ffffff, $alpha: 0.1);
+}
+.navbar-dark .dropdown-menu > .active > a,
+.navbar-dark .dropdown-menu > .active > a:hover,
+.navbar-dark .dropdown-menu > .active > a:focus {
+  color: rgba(255,255,255,0.70);
+  background-color: transparent;
+}
+
+.dropdown-item i {
+  @extend .mr-1 !optional;
+}
+
+form label.form-label-header {
+  font-weight: bold;
+}
+
+.form-check {
+  @extend .ml-2 !optional;
+}
+
+.number-button {
+  @extend .text-primary;
+  @extend .font-weight-bold;
+  @extend .border;
+  @extend .rounded-circle;
+  @extend .text-center;
+  height: 2.5rem;
+  width: 2.5rem;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.number-wrapper {
+  min-width: 3rem !important;
+}
+
+.get-involved a {
+  @extend .m-2;
+}
+
+.about-us {
+  @include media-breakpoint-down(xs) {
+    @include row-cols(1);
+  }
+}
+
+.about-us-text {
+  @include media-breakpoint-up(sm) {
+    text-align: right;
+  }
+}
+
+.nubs {
+  @include media-breakpoint-down(xs) {
+    @include row-cols(1);
+  }
+}
+
+.meetup-section {
+  @include media-breakpoint-down(xs) {
+    @include row-cols(1);
+    text-align: center !important;
+  }
+}
+
+.meetup-button {
+  @include media-breakpoint-up(sm) {
+    text-align: right !important;
+  }
+}
+
+.contact-defails {
+  @include media-breakpoint-down(xs) {
+    @include row-cols(1);
+  }
+}
+
+.index-header-wrapper .row {
+  @include media-breakpoint-down(sm) {
+    @include row-cols(1);
+  }
+}
+
+.callout {
+  padding: 20px;
+  margin: 20px 0;
+  border: 1px solid #eee;
+  border-left-width: 5px;
+  border-radius: 3px;
+  h4 {
+    margin-top: 0;
+    margin-bottom: 5px;
+  }
+  p:last-child {
+    margin-bottom: 0;
+  }
+  code {
+    border-radius: 3px;
+  }
+  & + .bs-callout {
+    margin-top: -5px;
+  }
+}
+
+@each $name,$color in $theme-colors {
+  .callout-#{$name} {
+    border-left-color: $color;
+    h4 {
+      color: $color;
+    }
+    .custom-block-heading {
+      color: $color;
+    }
+  }
+}
+
+.callout .custom-block-heading {
+  font-size: 1.1rem;
+  font-family: inherit;
+  font-weight: 800;
+  line-height: 1.5;
+}

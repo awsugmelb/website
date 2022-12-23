@@ -1,0 +1,17 @@
+{{ define "page" }}
+<div class="article" key={path}>
+    <div class="container">
+        {{ if .Params.Image }}
+        <div class="content">
+            <img src="{{ .RelPermalink }}{{.Params.Image }}" />
+        </div>
+        {{ end }}
+        <div class="info">
+            <time dateTime={{ .Date.Format "2006-01-02" }}>{{ .Date.Format "02/01/2006" }}</time>
+        </div>
+        <div class="content">
+            {{ .Content }}
+        </div>
+    </div>
+</div>
+{{ end }}

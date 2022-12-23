@@ -1,0 +1,134 @@
+baseURL: https://main.doimk5pbxlu49.amplifyapp.com
+languageCode: en-us
+title: Melbourne AWS User Group
+theme: awsmelb
+permalinks:
+  pages: /:slug
+  posts: /:slug
+  association: /association/:slug
+disableKinds:
+  - taxonomy
+  - term
+params:
+  mainSections: [posts]
+taxonomies:
+  association: association
+MetaDataFormat: yaml
+pygmentsCodeFences: true
+pygmentsStyle: native
+summaryLength: 25
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+build:
+  command: hugo --minify --gc
+minify:
+  disableCSS: false
+  disableHTML: false
+  disableJS: false
+  disableJSON: false
+  disableSVG: false
+  disableXML: false
+  minifyOutput: true
+  tdewolff:
+    html:
+      keepWhitespace: false
+menu:
+  main:
+      # Commented out menu sections because for some reason Hugo doesn't set active flags for menus defined here
+      # - Name: Home
+      #   Identifier: home
+      #   Url: /
+      #   Weight: 1
+      # - Name: "Code of Conduct"
+      #   Identifier: "code-of-conduct"
+      #   Url: /code-of-conduct
+      #   Weight: 2
+      - Name: "Get Involved"
+        Identifier: "get-involved"
+        Weight: 3
+      - Name: "First Time Here?"
+        Identifier: "first-time"
+        Url: /first-time-here
+        Weight: 1
+        Parent: "get-involved"
+      - Name: "Attending Meetups"
+        Identifier: attend-meetups
+        Url: /attend-meetups
+        Weight: 2
+        Parent: "get-involved"
+        pre: divider
+      - Name: "Join the Conversation"
+        Identifier: slack
+        Url: /slack
+        Weight: 3
+        Parent: get-involved
+      - Name: Speak
+        Identifier: speak
+        Url: /speak
+        Weight: 4
+        Parent: get-involved
+        pre: divider
+      - Name: "Volunteer"
+        Identifier: volunteer
+        Url: /volunteer
+        Weight: 5
+        Parent: get-involved
+      - Name: Sponsor
+        Identifier: sponsor
+        Url: /sponsor
+        Weight: 6
+        Parent: get-involved
+      - Name: "Videos"
+        Identifier: "videos"
+        Url: "/videos"
+        Weight: 4
+      - Name: "Podcast"
+        Identifier: "podcast"
+        Url: "/podcast"
+        Weight: 5
+      # - Name: "Contact Us"
+      #   Identifier: "contact-us"
+      #   Url: "/contact"
+      #   Weight: 6
+      - Name: "About"
+        Identifier: "about-main"
+        Weight: 7
+      - Name: "About"
+        Identifier: "about"
+        Url: "/about"
+        Weight: 1
+        parent: "about-main"
+      - Name: "Melbourne AWS User Group Inc."
+        Identifier: "inc"
+        Url: "/association"
+        Weight: 2
+        parent: "about-main"
+        pre: divider
+      - Name: "Organisers Committee"
+        Identifier: "organisers"
+        Url: "/association/committee"
+        Weight: 3
+        parent: "about-main"
+      - Name: "Info for Association Members"
+        Identifier: "members"
+        Url: "/association/members"
+        Weight: 4
+        parent: "about-main"
+      - Name: "Association Rules"
+        Identifier: "rules"
+        Url: "/association/rules"
+        Weight: 5
+        parent: "about-main"
+      - Name: "Meeting Notices"
+        Identifier: "notices"
+        Url: "/association/notices"
+        Weight: 6
+        parent: "about-main"
+        pre: divider
+      - Name: "Meeting Minutes"
+        Identifier: "minutes"
+        Url: "/association/minutes"
+        Weight: 7
+        parent: "about-main"
