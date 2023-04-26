@@ -126,9 +126,14 @@ menu:
         Url: "/association/notices"
         Weight: 6
         parent: "about-main"
-        pre: divider
-      - Name: "Meeting Minutes"
-        Identifier: "minutes"
-        Url: "/association/minutes"
+      - Name: "2023 AGM Minutes"
+        Identifier: "2023-agm"
+        Url: "/association/minutes/2023-agm"
         Weight: 7
+        parent: "about-main"
+        pre: divider
+      - Name: "2022 AGM Minutes"
+        Identifier: "2022-agm"
+        Url: "/association/minutes/2022-agm"
+        Weight: 8
         parent: "about-main"
