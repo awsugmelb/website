@@ -6,6 +6,7 @@ permalinks:
   pages: /:slug
   posts: /:slug
   association: /association/:slug
+  minutes: /association/minutes/:slug
 disableKinds:
   - taxonomy
   - term
