@@ -1,6 +1,6 @@
 ---
 title: Information for Association Members
-slug: association/members
+slug: members
 type: pages
 ---
 

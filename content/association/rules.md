@@ -1,7 +1,7 @@
 ---
 title: Association Rules
 type: pages
-slug: association/rules
+slug: rules
 TOC: true
 ---
 

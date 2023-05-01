@@ -1,6 +1,6 @@
 ---
 type: pages
-slug: association/committee
+slug: committee
 title: Organisers Committee
 ---
 
@@ -20,7 +20,7 @@ The committee is elected at our AGM and serves its term for one year. The last A
 | Title | Name |
 |---|---|
 | **President** | Arjen Schwarz |
-| **Vice-president** | Dawn E. Collett |
+| **Vice-president** | Dawn Cooper |
 | **Secretary** | Rob Amos |
 | **Treasurer** | Matt Merriel |
 | **Ordinary Members** | Jason Wood |
@@ -62,7 +62,7 @@ A number of people have served on the committee. You can find the details of the
 {{< bootstrap-table "table table-bordered" >}}
 | Name | Term |
 |---|---|
-| Dawn E. Collett | 2023 - Ongoing |
+| Dawn Cooper | 2023 - Ongoing |
 | Rob Amos | 2021 – 2022|
 | Arjen Schwarz | 2020|
 {{< /bootstrap-table >}}
@@ -90,6 +90,6 @@ A number of people have served on the committee. You can find the details of the
 | Name | Term |
 |---|---|
 | Jason Wood | 2023 - Ongoing |
-| Dawn E. Collett | 2022 |
+| Dawn Cooper | 2022 |
 | Chris Coombs | 2020 – 2021 |
 {{< /bootstrap-table >}}
