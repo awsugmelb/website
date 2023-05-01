@@ -1,7 +1,8 @@
-<div class="card">
+<div class="card" {{ if .IsHome }}{{else}}style="max-width: 33% !important"{{ end }}>
+    <a href="{{ .RelPermalink }}"><img src="{{.Params.Image }}" class="card-image-top" /></a>
     <div class="card-body">
         <h4 class="card-title text-center">{{ .Title }}</h4>
         <p>{{ if .Description }}{{.Description}}{{ else }}{{ .Summary }}{{ end }}</p>
-        <a href="{{ .RelPermalink }}">Read more &raquo;</a>
+        <a href="{{ .RelPermalink }}">Read minutes &raquo;</a>
     </div>
 </div>

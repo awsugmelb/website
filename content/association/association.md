@@ -1,6 +1,6 @@
 ---
 type: pages
-slug: association
+slug: overview
 title: Melbourne AWS User Group Inc.
 ---
 

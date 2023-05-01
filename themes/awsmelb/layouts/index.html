@@ -110,7 +110,7 @@
                 <div class="col">
                     <h1 class="display-4 text-center">Recent News</h1>
                     <div class="card-deck">
-                        {{ range where (.Paginator 3).Pages "Type" "in" site.Params.mainSections }}
+                        {{ range where (.Paginator 5).Pages "Type" "in" site.Params.mainSections }}
                             {{ .Render "summary" }}
                         {{ end }}
                     </div>
@@ -302,7 +302,7 @@
                         <div class="card">
                             <img src="/img/dawn.jpg" alt="Picture of Dawn" class="card-img-top" />
                             <div class="card-body">
-                                <h5 class="card-title">Dawn</h5>
+                                <h5 class="card-title">Dawn Cooper</h5>
                                 <h6 class="card-subtitle">Organiser</h6>
                                 <p class="card-text">
                                     <a href="mailto:dawn@awsug.org.au" class="fa fa-at text-muted"></a>

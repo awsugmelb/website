@@ -13,11 +13,12 @@ disableKinds:
 params:
   mainSections: [posts]
 taxonomies:
-  association: association
+  minutes: minutes
 MetaDataFormat: yaml
 pygmentsCodeFences: true
 pygmentsStyle: native
 summaryLength: 25
+Paginate: 15
 markup:
   goldmark:
     renderer:
@@ -103,7 +104,7 @@ menu:
         parent: "about-main"
       - Name: "Melbourne AWS User Group Inc."
         Identifier: "inc"
-        Url: "/association"
+        Url: "/association/overview"
         Weight: 2
         parent: "about-main"
         pre: divider
@@ -127,14 +128,8 @@ menu:
         Url: "/association/notices"
         Weight: 6
         parent: "about-main"
-      - Name: "2023 AGM Minutes"
-        Identifier: "2023-agm"
-        Url: "/association/minutes/2023-agm"
+      - Name: "Meeting Minutes"
+        Identifier: "minutes"
+        Url: "/association/minutes"
         Weight: 7
-        parent: "about-main"
-        pre: divider
-      - Name: "2022 AGM Minutes"
-        Identifier: "2022-agm"
-        Url: "/association/minutes/2022-agm"
-        Weight: 8
         parent: "about-main"

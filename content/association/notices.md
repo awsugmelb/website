@@ -1,6 +1,6 @@
 ---
 type: pages
-slug: association/notices
+slug: notices
 title: Notice of Annual General Meeting
 ---
 
