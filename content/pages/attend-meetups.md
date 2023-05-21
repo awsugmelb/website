@@ -35,21 +35,21 @@ Our meetup agenda varies month to month, but they all follow the same basic sche
 
 ## Venue
 
-Our main venue for 2023 is NAB Event Hub, 395 Bourke Street, Melbourne.
+Our main venue for 2023 is the Event Hub at NAB Place, 395 Bourke Street, Melbourne.
 
-[![](/img/map.png)](https://www.google.com/maps/place/395+Bourke+St,+Melbourne+VIC+3000)
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1575.9692439633375!2d144.96163366942378!3d-37.81490976116246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad643b3bd701599%3A0x7c1ab670509d10d2!2sNAB%20Place%20Melbourne%20Expert%20Centre%20(Tellerless)!5e0!3m2!1sen!2sus!4v1684647531916!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
 
 ### Getting There
 
-NAB Event Hub is reachable from Bourke street. UPDATE THIS
+NAB Place is reachable from Bourke street, between Queen Street and Elizabeth Street. When traveling by tram, the closest stop is stop 5 for trams 86 and 96. From there you cross Elizabeth Street and you'll be able to find it quickly and it's clearly marked.
 
 ### Inside NAB Event Hub
 
-When you enter the Event Hub from Bourke street, you walk in the direction of the elevators and will see a little bit past them on the left side a big sign for "EVENT HUB". That's where you need to go.
+When you enter the Event Hub from Bourke street, you walk in the direction of the escalators and will see a little bit past them on the left side a big sign for "EVENT HUB". That's where you need to go.
 
 ## Accessibility
 
-Our venue, NAB Event Hub, provides step-free access from Bourke Street through to the room. Inside the room, there are no elevated spaces and space is available for wheelchairs or other mobility devices. If you have any concerns, please reach out to the organisers.
+Our venue, NAB Place, provides step-free access from Bourke Street through to the room. Inside the room, there are no elevated spaces and space is available for wheelchairs or other mobility devices. If you have any concerns, please reach out to the organisers.
 
 ## Catering
 
@@ -64,7 +64,7 @@ We don't order all dietary options for every meetup in order to keep food wastag
 
 ## Presentations
 
-We generally have two or three presentations at each event, though this varies month to month. Our speakers are donating their time and knowlege for these events, so we ask that all attendees are polite and respectful.
+We generally have two or three presentations at each event, though this varies month to month. Our speakers are donating their time and knowledge for these events, so we ask that all attendees are polite and respectful.
 
 Some tips:
 
@@ -81,7 +81,7 @@ Asking good questions is important to the flow of the night and the experience o
 - **Ask polite questions that contribute to the discussion.**
 - **Nobody knows all the answers!** Speakers often know a lot about their subject, but nobody knows all the answers to every question. Please remember that "I don't know" is an acceptable answer.
 - **Don't try to catch presenters out.** Maybe you know more about the presented subject than the speaker, but don't try to catch them out by asking some super tricky or obscure question. It's not polite.
-- **Don't have a conversation.** If you feel your question might lead to several follow up questions, please speak to the presenter during the break or after the event and have a conversation with them directly.
+- **Don't have a conversation.** If you feel your question might lead to several follow up questions, please speak to the presenter after the event and have a conversation with them directly.
 
 ## Introductory Presentation
 
