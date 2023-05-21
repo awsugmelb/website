@@ -69,8 +69,7 @@ slug: submit-talk
     <div class="col">
         <label for="email" class="form-label-header">Email Address <span class="text-danger">*</span></label>
         <input type="email" class="form-control" id="email" aria-describedby="email-help" name="Email"
-            required=""><small id="email-help" class="form-text text-muted">Your email address is never published. Its
-            purely so we can get in touch.</small>
+            required=""><small id="email-help" class="form-text text-muted">Your email address is never published. It's purely so we can get in touch.</small>
     </div>
 </div>
 <div class="row form-group">
@@ -78,8 +77,7 @@ slug: submit-talk
         <label for="bio" class="form-label-header">About You / Short Bio</label>
         <textarea id="bio" class="form-control" name="Bio" aria-describedby="bio-help"
             style="height: 100px;"></textarea><small id="bio-help" class="form-text text-muted">A little about yourself.
-            This is generally used in the context of the introduction at events, so anything you'd like us to say about
-            you.</small>
+            We use this to introduce you at the event as well as on social media. So include anything you'd like us to say about you.</small>
     </div>
 </div>
 <hr>
