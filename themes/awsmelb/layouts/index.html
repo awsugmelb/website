@@ -108,7 +108,7 @@
             <div class="row bg-white py-5">
                 <div class="col col-sm-1 d-none d-md-block"></div>
                 <div class="col">
-                    <h1 class="display-4 text-center">Recent News</h1>
+                    <h1 class="display-4 text-center">Recent News (<a href="/posts">archive</a>)</h1>
                     <div class="card-deck">
                         {{ range where (.Paginator 5).Pages "Type" "in" site.Params.mainSections }}
                             {{ .Render "summary" }}
@@ -300,7 +300,7 @@
                             </div>
                         </div>
                         <div class="card">
-                            <img src="/img/dawn.jpg" alt="Picture of Dawn" class="card-img-top" />
+                            <img src="/img/dawn.jpg" alt="Picture of Dawn Cooper" class="card-img-top" />
                             <div class="card-body">
                                 <h5 class="card-title">Dawn Cooper</h5>
                                 <h6 class="card-subtitle">Organiser</h6>

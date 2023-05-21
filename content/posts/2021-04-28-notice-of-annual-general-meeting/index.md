@@ -1,6 +1,8 @@
 ---
 title: Notice of Annual General Meeting
-slug: 2021-04-28-notice-of-annual-general-meeting
+slug: notice-of-annual-general-meeting-2021
+aliases:
+  - /2021-04-28-notice-of-annual-general-meeting
 image: image.png
 date: 2021-04-28T12:00:00Z
 ---

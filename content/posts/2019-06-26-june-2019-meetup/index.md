@@ -1,6 +1,8 @@
 ---
 title: June 2019 meetup
-slug: 2019-06-26-june-2019-meetup/
+slug: 2019-06-26-june-2019-meetup
+aliases:
+  - /2019-06-26-june-2019-meetup
 image: image.png
 date: 2019-06-30T00:00:00Z
 ---

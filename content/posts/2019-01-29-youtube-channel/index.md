@@ -2,6 +2,8 @@
 title: YouTube Channel
 date: 2019-01-29T01:00:00Z
 slug: 2019-01-29-youtube-channel
+aliases:
+  - /2019-01-29-youtube-channel
 image: image.jpg
 ---
 

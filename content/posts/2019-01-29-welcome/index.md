@@ -1,6 +1,8 @@
 ---
 title: Welcome!
 slug: 2019-01-29-welcome
+aliases:
+  - /2019-01-29-welcome
 image: image.png
 date: 2019-01-28T22:00:00Z
 ---

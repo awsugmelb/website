@@ -3,6 +3,8 @@ title: April 2019 Meetup
 date: 2019-05-06T00:00:00Z
 image: image.png
 slug: 2019-05-06-april-2019-meetup
+aliases:
+  - /2019-05-06-april-2019-meetup
 ---
 
 When you sandwich a meetup between two different public holidays, would you expect a lot of people to show up? If you have as great a community as we do and a couple of awesome speakers, the answer to that is a resounding yes! Thank you for everyone who came along and made the evening a success. And if you couldn't make it because you were off on a holiday somewhere just keep on reading and watch the videos.

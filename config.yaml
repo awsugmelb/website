@@ -4,7 +4,7 @@ title: Melbourne AWS User Group
 theme: awsmelb
 permalinks:
   pages: /:slug
-  posts: /:slug
+  posts: /posts/:slug
   association: /association/:slug
   minutes: /association/minutes/:slug
 disableKinds:

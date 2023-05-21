@@ -1,6 +1,8 @@
 ---
 title: We Have A Podcast!
 slug: 2020-04-12-we-have-a-podcast
+aliases:
+  - /2020-04-12-we-have-a-podcast
 image: image.jpg
 date: 2020-04-12
 ---

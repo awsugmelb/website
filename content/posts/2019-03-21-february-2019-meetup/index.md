@@ -2,6 +2,8 @@
 title: February 2019 Meetup
 date: 2019-03-21T00:00:00Z
 slug: 2019-03-21-february-2019-meetup
+aliases:
+  - /2019-03-21-february-2019-meetup
 image: image.jpg
 ---
 

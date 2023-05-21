@@ -4,7 +4,7 @@
         <div class="row bg-white py-5">
             <div class="col col-sm-1 d-none d-md-block"></div>
             <div class="col">
-                <h1 class="display-4 text-center">Recent News</h1>
+                <h1 class="display-4 text-center">Past meetings</h1>
                 <div class="card-deck">
                     {{ range where .Site.RegularPages "Type" "in" "minutes" }}
                     {{ .Render "summary" }}

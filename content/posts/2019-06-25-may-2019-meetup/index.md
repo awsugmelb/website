@@ -2,6 +2,8 @@
 title: May 2019 Meetup
 date: 2019-06-24T23:15:00Z
 slug: 2019-06-25-may-2019-meetup
+aliases:
+  - /2019-06-25-may-2019-meetup
 image: image.png
 ---
 

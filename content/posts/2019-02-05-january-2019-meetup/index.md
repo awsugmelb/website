@@ -1,7 +1,9 @@
 ---
 title: January 2019 Meetup
 date: 2019-02-04T22:33:00Z
-slug: /2019-02-05-january-2019-meetup
+slug: 2019-02-05-january-2019-meetup
+aliases:
+  - 2019-02-05-january-2019-meetup
 image: image.jpg
 ---
 

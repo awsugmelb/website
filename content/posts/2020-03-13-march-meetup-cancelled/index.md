@@ -1,6 +1,8 @@
 ---
 title: March Meetup Cancelled
 slug: 2020-03-13-march-meetup-cancelled
+aliases:
+  - 2020-03-13-march-meetup-cancelled
 image: image.jpg
 date: 2020-03-13T06:40:00Z
 ---

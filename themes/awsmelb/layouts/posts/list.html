@@ -1,16 +1,12 @@
 {{ define "bodytags" }}class="archive category alt-style-default layout-right-content"{{ end }}
-{{ define "main" }}
+{{ define "page" }}
     <div id="content" class="col-full">
         <section id="main" class="col-full">
-            <header class="archive-header">
-                <h1>Archive | {{ .Title }}</h1>
-            </header>
             <div class="fix"></div>
 
             <div class="row bg-white py-5">
                 <div class="col col-sm-1 d-none d-md-block"></div>
                 <div class="col">
-                    <h1 class="display-4 text-center">Recent News</h1>
                     <div class="card-deck">
                         {{ range .Paginator.Pages }}
                         {{ $.Scratch.Add "i" 1 }}

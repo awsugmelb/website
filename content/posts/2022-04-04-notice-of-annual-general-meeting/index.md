@@ -1,6 +1,8 @@
 ---
 Title: Notice of Annual General Meeting 2022
-Slug: 2022-04-04-notice-of-annual-general-meeting
+Slug: notice-of-annual-general-meeting-2022
+Aliases:
+  - /2022-04-04-notice-of-annual-general-meeting
 Image: image.png
 date: 2022-04-04T11:00:55-08:00
 Author: Arjen Schwarz

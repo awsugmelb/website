@@ -1,6 +1,8 @@
 ---
 Title: Notice of Annual General Meeting 2023
 Slug: notice-of-annual-general-meeting-2023
+Aliases:
+  - /notice-of-annual-general-meeting-2023
 Image: image.png
 date: 2023-03-20T21:40:17+11:00
 Author: Arjen Schwarz

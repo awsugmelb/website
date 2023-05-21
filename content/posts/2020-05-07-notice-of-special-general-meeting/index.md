@@ -1,6 +1,8 @@
 ---
 title: Notice of Special General Meeting
 slug: 2020-05-07-notice-of-special-general-meeting
+aliases:
+  - /2020-05-07-notice-of-special-general-meeting
 image: image.jpg
 date: 2020-04-07T12:00:00Z
 ---
