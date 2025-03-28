@@ -4,11 +4,11 @@ frontend:
     preBuild:
       commands:
       # Hacky way to get extended version of Hugo as AWS doesn't supply that in Amplify
-        - curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | grep "browser_download_url.*hugo_extended.*_Linux-64bit\.tar\.gz" | cut -d ":" -f 2,3 | tr -d '\\"' | wget -qi -
-        - tar -xzf "$(find . -name "*Linux-64bit.tar.gz")"
+        - curl -s https://api.github.com/repos/gohugoio/hugo/releases/latest | grep "browser_download_url.*hugo_extended_[0-9].*_Linux-64bit\.tar\.gz" | cut -d ":" -f 2,3 | tr -d '\\"' | wget -O hugo.tar.gz -qi -
+        - tar xzf hugo.tar.gz
         - chmod +x hugo
         - mv hugo /usr/bin/hugo
-        - rm -rf "$(find . -name '*Linux-64bit.tar.gz')"
+        - rm -rf hugo.tar.gz
         - hugo version
     build:
       commands:

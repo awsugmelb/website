@@ -4,7 +4,7 @@ Slug: notice-of-annual-general-meeting-2025
 Aliases:
   - /notice-of-annual-general-meeting-2025
 Image: image.png
-date: 2025-03-28T12:05:17+11:00
+date: 2025-03-26T12:05:17+11:00
 Author: Arjen Schwarz
 Categories:
 - AWS
