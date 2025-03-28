@@ -81,7 +81,7 @@ slug: submit-talk
     </div>
 </div>
 <hr>
-<div class="row row-cols-1 row-cols-sm-2">
+<div class="row form-group">
     <div class="col">
         <label for="mastodon" class="form-label-header">Mastodon</label>
         <div class="input-group">
@@ -92,17 +92,6 @@ slug: submit-talk
         </div><small id="mastodon-help" class="form-text text-muted">We regularly promote events on <a rel="me"
                 href="https://awscommunity.social/@awsmelb">Mastodon</a>. Please include your username if you’d like
             us to @-mention you.</small>
-    </div>
-    <div class="col">
-        <label for="twitter" class="form-label-header">Twitter</label>
-        <div class="input-group">
-            <div class="input-group-prepend">
-                <div class="input-group-text">@</div>
-            </div><input type="twitter" class="form-control" id="twitter" name="Twitter"
-                aria-describedby="twitter-help">
-        </div><small id="twitter-help" class="form-text text-muted">We regularly promote events on <a
-                href="https://twitter.com/awsmelb" target="_blank">Twitter</a>. Please include your username if you’d
-            like us to @-mention you.</small>
     </div>
 
 </div>
