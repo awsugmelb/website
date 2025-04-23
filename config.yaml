@@ -18,7 +18,8 @@ MetaDataFormat: yaml
 pygmentsCodeFences: true
 pygmentsStyle: native
 summaryLength: 25
-Paginate: 15
+pagination:
+  pagerSize: 15
 markup:
   goldmark:
     renderer:

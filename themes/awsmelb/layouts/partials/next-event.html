@@ -1,0 +1,61 @@
+{{ $currentYear := now.Format "2006" }}
+{{ $currentMonth := now.Format "01" }}
+{{ $eventFilePath := printf "content/events/%s/%s.md" $currentYear $currentMonth }}
+{{ $eventExists := fileExists $eventFilePath }}
+
+{{ if $eventExists }}
+  {{ $rawContent := readFile $eventFilePath }}
+
+  <!-- Split the content by front matter delimiters -->
+  {{ $parts := split $rawContent "---" }}
+  {{ $frontMatterYAML := index $parts 1 }}
+  {{ $parts := after 2 $parts }}
+
+  {{ $content := delimit $parts "---" }}
+
+  <!-- Parse front matter -->
+  {{ $frontMatter := $frontMatterYAML | transform.Unmarshal }}
+
+  <div class="next-event-custom">
+    <h4>{{ $frontMatter.title }}</h4>
+    <ul>
+      {{ with $frontMatter.date }}
+        <li><strong>Date:</strong> {{ . | time.AsTime | time.Format "02 January 2006"}}</li>
+      {{ end }}
+      {{ with $frontMatter.time }}
+        <li><strong>Time:</strong> {{ . }}</li>
+      {{ end }}
+
+      {{ with $frontMatter.venue }}
+        <li><strong>Venue:</strong> {{ . }}</li>
+      {{ end }}
+
+      {{ with $frontMatter.address }}
+        <li><strong>Address:</strong> {{ . }}</li>
+      {{ end }}
+    </ul>
+
+    <div class="event-content">
+      {{ $content | markdownify }}
+    </div>
+
+    <p>
+      <a href="{{ $frontMatter.meetup }}" class="btn btn-primary" target="_blank">
+        RSVP on Meetup
+      </a>
+    </p>
+  </div>
+{{ else if eq $currentMonth "12" }}
+  <div class="next-event-default">
+    <h4>Holiday Break</h4>
+    <p>We're taking a break for the holidays. We'll be back in January for our next event!</p>
+    <p>Join us on <a href="https://www.meetup.com/en-AU/AWS-AUS/" target="_blank">Meetup</a> to be notified when RSVPs open for our next event.</p>
+  </div>
+{{ else }}
+  <div class="next-event-default">
+    <h4>Next Meetup</h4>
+    <p>Our next meetup will be on the last Wednesday of the month.</p>
+    <p>Details will be announced soon. Check back later for more information!</p>
+    <p>Join us on <a href="https://www.meetup.com/en-AU/AWS-AUS/" target="_blank">Meetup</a> to be notified when RSVPs open.</p>
+  </div>
+{{ end }}

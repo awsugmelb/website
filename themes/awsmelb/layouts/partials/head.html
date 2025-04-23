@@ -5,8 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="/img/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180" />
     <link href="/img/favicon.ico" rel="icon" type="image/x-icon" />
-    {{ $styles := resources.Get "scss/style.scss" | resources.ToCSS | minify }}
-    <link rel="stylesheet" href="{{ $styles.Permalink }}" />
+    {{ with resources.Get "scss/style.scss" }}
+        {{ $opts := dict
+            "enableSourceMap" (not hugo.IsProduction)
+            "outputStyle" (cond hugo.IsProduction "compressed" "expanded")
+            "targetPath" "css/style.css"
+            "transpiler" "libsass"
+            "vars" site.Params.styles
+            "includePaths" (slice "node_modules/bootstrap/scss")
+        }}
+    {{ with . | toCSS $opts }}
+        {{ if hugo.IsProduction }}
+            {{ with . | fingerprint }}
+                <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous">
+            {{ end }}
+            {{ else }}
+            <link rel="stylesheet" href="{{ .RelPermalink }}">
+            {{ end }}
+        {{ end }}
+        {{ end }}
     {{ $styles := resources.Get "css/fontawesome.css" | minify }}
     <link rel="stylesheet" href="{{ $styles.Permalink }}" />
     <style type="text/css">
