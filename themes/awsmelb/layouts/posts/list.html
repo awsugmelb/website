@@ -4,29 +4,9 @@
         <section id="main" class="col-full">
             <div class="fix"></div>
 
-            <div class="row bg-white py-5">
-                <div class="col col-sm-1 d-none d-md-block"></div>
-                <div class="col">
-                    <div class="card-deck">
-                        {{ range .Paginator.Pages }}
-                        {{ $.Scratch.Add "i" 1 }}
-                        {{ $i := $.Scratch.Get "i" }}
-                        {{ .Render "summary" }}
-                        {{ if modBool $i 3 }}
-                        </div>
-                        </div>
-                        <div class="col col-sm-1 d-none d-md-block"></div>
-                        </div>
-                        <div class="row bg-white py-5">
-                            <div class="col col-sm-1 d-none d-md-block"></div>
-                            <div class="col">
-                                <div class="card-deck">
-                        {{ end }}
-                        {{ end }}
-                    </div>
-                </div>
-                <div class="col col-sm-1 d-none d-md-block"></div>
-            </div>
+            {{ range .Paginator.Pages }}
+            {{ .Render "summary" }}
+            {{ end }}
 
             {{ template "_internal/pagination.html" . }}
 

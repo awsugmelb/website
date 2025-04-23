@@ -107,8 +107,8 @@
                 <div class="col">
                     <h1 class="display-4 text-center">Recent News (<a href="/posts">archive</a>)</h1>
                     <div class="card-deck">
-                        {{ range where (.Paginator 5).Pages "Type" "in" site.Params.mainSections }}
-                            {{ .Render "summary" }}
+                        {{ range where (.Paginator 3).Pages "Type" "in" site.Params.mainSections }}
+                            {{ .Render "card" }}
                         {{ end }}
                     </div>
                 </div>

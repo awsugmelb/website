@@ -11,7 +11,7 @@ disableKinds:
   - taxonomy
   - term
 params:
-  mainSections: [posts]
+  mainSections: [posts, minutes]
 taxonomies:
   minutes: minutes
 MetaDataFormat: yaml
