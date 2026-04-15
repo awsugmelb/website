@@ -13,14 +13,14 @@ The Melbourne AWS User Group was founded by Rob Linton in 2011. He stepped down 
 
 ## Current Committee
 
-The committee is elected at our AGM and serves its term for one year. The last AGM was held at [26th April 2023](/association/minutes/2023-agm).
+The committee is elected at our AGM and serves its term for one year. The last AGM was held at [15th April 2026](/association/minutes/2026-agm).
 
 
 {{< bootstrap-table "table table-bordered" >}}
 | Title | Name |
 |---|---|
-| **President** | Arjen Schwarz |
-| **Vice-president** | Jason Wood |
+| **President** | Jason Wood |
+| **Vice-president** | Arjen Schwarz |
 | **Secretary** | Rob Amos |
 | **Treasurer** | Matt Merriel |
 {{< /bootstrap-table >}}
@@ -52,7 +52,8 @@ A number of people have served on the committee. You can find the details of the
 {{< bootstrap-table "table table-bordered" >}}
 | Name | Term |
 |---|---|
-| Arjen Schwarz	| 2021 – Ongoing |
+| Jason Wood | 2026 - ongoing |
+| Arjen Schwarz	| 2021 – 2025 |
 | Rob Amos | 2020 |
 {{< /bootstrap-table >}}
 
@@ -61,7 +62,8 @@ A number of people have served on the committee. You can find the details of the
 {{< bootstrap-table "table table-bordered" >}}
 | Name | Term |
 |---|---|
-| Jason Wood | 2025 - Ongoing |
+| Arjen Schwarz | 2026 - ongoing |
+| Jason Wood | 2025 |
 | Dawn Cooper | 2023 - 2024 |
 | Rob Amos | 2021 – 2022 |
 | Arjen Schwarz | 2020 |
@@ -72,7 +74,7 @@ A number of people have served on the committee. You can find the details of the
 {{< bootstrap-table "table table-bordered" >}}
 | Name | Term |
 |---|---|
-| Rob Amos | 2020 – Ongoing|
+| Rob Amos | 2020 – ongoing |
 {{< /bootstrap-table >}}
 
 ### Treasurers
@@ -80,8 +82,8 @@ A number of people have served on the committee. You can find the details of the
 {{< bootstrap-table "table table-bordered" >}}
 | Name | Term |
 |---|---|
-| Matthew Merriel | 2021 – Ongoing|
-| Rob Linton	| 2020|
+| Matthew Merriel | 2021 – ongoing|
+| Rob Linton	| 2020 |
 {{< /bootstrap-table >}}
 
 ### Ordinary Members
